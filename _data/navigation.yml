@@ -11,14 +11,14 @@ main:
   # - title: "Publications"
     # url: /publications/
 
-  - title: "中文"
-    url: /talks/    
+  # - title: "中文"
+    # url: /talks/    
 
   - title: "Join Us"
     url: /teaching/    
     
-  - title: "招聘"
-    url: /portfolio/
+  # - title: "招聘"
+    # url: /portfolio/
         
   # - title: "Blog Posts"
     # url: /year-archive/
