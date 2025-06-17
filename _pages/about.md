@@ -41,7 +41,7 @@ Work Experience
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(Department of Civil and Transportation Engineering)
 
-2023.09 - 2025.06 &emsp;&emsp; Postdoctoral Fellow, The University of Hong Kong (Prof. Wei Pan)
+2023.09 - 2025.04 &emsp;&emsp; Postdoctoral Fellow, The University of Hong Kong (Prof. Wei Pan)
 
 2023.06 - 2023.09 &emsp;&emsp; Research Assistant, The University of Hong Kong (Prof. Wei Pan)
 
@@ -67,8 +67,9 @@ Selected Publications
 **Material and Mechanical behavior of precast concrete/UHPC structures**
 
 1. **Tongxu Liu**, Zhen Wang*, Jingquan Wang, Jian Zhang. (2024). Determination of reduction factor of shear key configuration in calculating direct shear strength of precast concrete dry joints using parametric finite element simulation. Journal of Bridge Engineering, 29(7), 04024045. 
-2. **Tongxu Liu**, Zhen Wang, Jian Guo, and Jingquan Wang*. (2019). Shear strength of dry joints in precast UHPC segmental bridges: Experimental and theoretical research. Journal of Bridge Engineering, 2019, 24(1), 04018100.
-3. Jingquan Wang*, Jiaping Liu, Zhen Wang, **Tongxu Liu**, Jianzhong Liu, Jian Zhang. (2021). Cost-effective UHPC for accelerated bridge construction: Material properties, structural elements, and structural applications. Journal of Bridge Engineering, 2021, 26(2): 04020117. 
+2. **Tongxu Liu**, Zhen Wang*, Zilin Long, Junlin Zeng, Jingquan Wang, Jian Zhang. (2022). Direct shear strength prediction for precast concrete joints using machine learning method. Journal of Bridge Engineering, 27(5), 04022026.
+3. **Tongxu Liu**, Zhen Wang, Jian Guo, and Jingquan Wang*. (2019). Shear strength of dry joints in precast UHPC segmental bridges: Experimental and theoretical research. Journal of Bridge Engineering 24(1), 04018100.
+4. Jingquan Wang*, Jiaping Liu, Zhen Wang, **Tongxu Liu**, Jianzhong Liu, Jian Zhang. (2021). Cost-effective UHPC for accelerated bridge construction: Material properties, structural elements, and structural applications. Journal of Bridge Engineering, 2021, 26(2): 04020117. 
 
 
 Others
@@ -105,4 +106,4 @@ Scholarship from International Concrete Repair Institute (ICRI)
 
 Join us
 ------
-Prof. Liu is currently seeking highly motivated **Postdoc**, **Ph.D. students**, and **master students** for 2026 as well as **short-term research assistant** starting for 2025. Interested candidates are strongly encouraged to contact me via email, along with their resume and transcripts.
+Prof. Liu is currently seeking highly motivated **Postdoctal Fellows**, **Ph.D. Students**, and **Master Students** as well as **Short-term Research Assistant** starting for 2025 and 2026. Interested candidates are strongly encouraged to contact me via email, along with their resume and transcripts.
