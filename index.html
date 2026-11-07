@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">MEOW Research Group</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- ===== NAVIGATION ===== -->
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo" id="nav-logo">MEOW Lab</a>
+    <div class="nav-links">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#research" class="nav-link">Research</a>
+      <a href="#people" class="nav-link">People</a>
+      <a href="#recruitment" class="nav-link">Join Us</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+  </div>
+</nav>
+
+<!-- ===== HOME SECTION ===== -->
+<section id="home" class="section active-section">
+  <div class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1 id="home-title" class="hero-title">MEOW Research Group</h1>
+      <p id="home-subtitle" class="hero-subtitle">Modern Engineering for Our World</p>
+      <p id="home-affiliation" class="hero-affiliation">Department of Civil Engineering, Your University</p>
+      <div class="hero-scroll">
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <!-- Vision -->
+    <div class="card vision-card" id="vision-card">
+      <div class="card-icon">🎯</div>
+      <h2 id="vision-title">Vision</h2>
+      <p id="vision-content"></p>
+      <div class="keywords" id="vision-keywords"></div>
+    </div>
+    <!-- News -->
+    <div class="card news-card">
+      <h2>📰 <span id="news-title">News</span></h2>
+      <div class="news-list" id="news-list"></div>
+    </div>
+  </div>
+  <!-- Recruitment preview -->
+  <div class="recruit-banner" id="recruit-banner">
+    <div class="container">
+      <h2>📋 <span id="recruit-title-home">Join Our Team</span></h2>
+      <p id="recruit-intro-home"></p>
+      <a href="#recruitment" class="btn btn-outline">View Openings</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESEARCH SECTION ===== -->
+<section id="research" class="section">
+  <div class="container">
+    <h1 class="section-title" id="research-title">Research Directions</h1>
+    <p class="section-intro" id="research-intro"></p>
+    <div class="research-grid" id="research-grid"></div>
+  </div>
+</section>
+
+<!-- ===== PEOPLE SECTION ===== -->
+<section id="people" class="section">
+  <div class="container">
+    <h1 class="section-title" id="people-title">People</h1>
+    <p class="section-intro" id="people-intro"></p>
+    <!-- PI Card -->
+    <div class="pi-card" id="pi-card"></div>
+    <!-- Students Grid -->
+    <h2 class="subsection-title">Current Members</h2>
+    <div class="people-grid" id="students-grid"></div>
+    <!-- Alumni -->
+    <div class="alumni-section" id="alumni-section"></div>
+  </div>
+</section>
+
+<!-- ===== RECRUITMENT SECTION ===== -->
+<section id="recruitment" class="section">
+  <div class="container">
+    <h1 class="section-title" id="recruit-title">Recruitment</h1>
+    <p class="section-intro" id="recruit-intro"></p>
+    <div class="positions-grid" id="positions-grid"></div>
+    <div class="contact-card" id="recruit-contact"></div>
+  </div>
+</section>
+
+<!-- ===== MODAL for PI/Student detail ===== -->
+<div id="person-modal" class="modal">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<!-- ===== DARK MODE TOGGLE ===== -->
+<button id="theme-toggle" class="theme-toggle" title="Toggle theme">🌓</button>
+
+<!-- ===== FOOTER ===== -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-info">
+        <h3 id="footer-logo">MEOW Lab</h3>
+        <p id="footer-address"></p>
+        <p id="footer-email"></p>
+      </div>
+      <div class="footer-links" id="footer-links"></div>
+    </div>
+    <div class="footer-bottom">
+      <p id="footer-copyright"></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<!-- Live Reload: auto-refresh when editor saves (no-op on GitHub Pages) -->
+<script>
+(function(){var t=0;setInterval(function(){fetch('/__status?_='+Date.now()).then(function(r){return r.json()}).then(function(d){if(!t){t=d.last_saved;return}if(d.last_saved>t)location.reload()}).catch(function(){})},2000)})();
+</script>
+</body>
+</html>

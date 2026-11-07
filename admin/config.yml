@@ -1,0 +1,184 @@
+# ============================================================
+#  Decap CMS 编辑器配置
+#  此文件把 website/data.json 的全部字段映射成表单。
+#  注意：所有字段都必须列在这里，漏掉任何字段都会在保存时被删除！
+#  学生登录 https://montrealcat.github.io/admin/ 后即可用表单编辑。
+# ============================================================
+
+backend:
+  name: github
+  repo: MontrealCat/montrealcat.github.io        # ← 改成你的「用户名/仓库名」，确认大小写
+  branch: main                                    # ← 改成你仓库的默认分支（main 或 master）
+  base_url: https://YOUR-OAUTH.vercel.app         # ← 改成你部署的 OAuth 服务器地址（结尾不要 /api）
+  site_domain: montrealcat.github.io
+
+# 图片上传到仓库根的 photos/ 目录，内容里存 "photos/xxx.jpg"
+media_folder: photos
+public_folder: photos
+
+# 禁用右侧预览（本网站是 JS 动态渲染，内置 iframe 预览不适用）
+editor:
+  preview: false
+
+# simple = 点「发布」直接提交上线（实时，推荐）
+# 若想「学生改完先由你审核再上线」，把这行改成 editorial_workflow
+publish_mode: simple
+
+collections:
+  - name: site
+    label: 网站内容
+    files:
+      - name: content
+        label: 全部内容（data.json）
+        file: data.json
+        fields:
+          # ---------- 站点信息 ----------
+          - name: site
+            label: 站点信息
+            widget: object
+            fields:
+              - {label: 网站标题, name: title, widget: string}
+              - {label: 副标题, name: subtitle, widget: string}
+              - {label: 大学, name: university, widget: string}
+              - {label: 院系, name: department, widget: string}
+              - {label: Logo 文字, name: logo_text, widget: string}
+              - {label: 图标 Emoji, name: favicon, widget: string}
+
+          # ---------- 导航栏 ----------
+          - name: navigation
+            label: 导航栏文字
+            widget: object
+            fields:
+              - {label: Home 菜单文字, name: home, widget: string}
+              - {label: Research 菜单文字, name: research, widget: string}
+              - {label: People 菜单文字, name: people, widget: string}
+              - {label: Recruitment 菜单文字, name: recruitment, widget: string}
+
+          # ---------- 首页 ----------
+          - name: home
+            label: 首页
+            widget: object
+            fields:
+              - name: vision
+                label: Vision（愿景）
+                widget: object
+                fields:
+                  - {label: 标题, name: title, widget: string}
+                  - {label: 内容, name: content, widget: text}
+                  - name: keywords
+                    label: 关键词
+                    widget: list
+                    field: {label: 关键词, name: keyword, widget: string}
+              - name: news
+                label: News（新闻）
+                widget: object
+                fields:
+                  - {label: 标题, name: title, widget: string}
+                  - name: items
+                    label: 新闻列表
+                    widget: list
+                    fields:
+                      - {label: 日期, name: date, widget: string}
+                      - {label: 内容, name: text, widget: text}
+              - name: recruitment
+                label: 招聘
+                widget: object
+                fields:
+                  - {label: 标题, name: title, widget: string}
+                  - {label: 简介, name: intro, widget: text}
+                  - name: positions
+                    label: 招聘岗位
+                    widget: list
+                    fields:
+                      - {label: 岗位名称, name: role, widget: string}
+                      - {label: 名额, name: slots, widget: string}
+                      - {label: 要求, name: requirements, widget: text}
+                  - {label: 联系方式, name: contact, widget: text}
+
+          # ---------- 研究方向 ----------
+          - name: research
+            label: 研究方向
+            widget: object
+            fields:
+              - {label: 标题, name: title, widget: string}
+              - {label: 简介, name: intro, widget: text}
+              - name: directions
+                label: 研究方向列表
+                widget: list
+                fields:
+                  - {label: ID（英文标识，勿改）, name: id, widget: string}
+                  - {label: 名称, name: name, widget: string}
+                  - {label: 图标 Emoji, name: icon, widget: string}
+                  - {label: 简短描述, name: short, widget: text}
+                  - {label: 详细描述, name: detail, widget: text}
+                  - name: keywords
+                    label: 关键词
+                    widget: list
+                    field: {label: 关键词, name: keyword, widget: string}
+                  - {label: 图片（可选）, name: image, widget: image, required: false}
+
+          # ---------- 成员 ----------
+          - name: people
+            label: 成员
+            widget: object
+            fields:
+              - {label: 标题, name: title, widget: string}
+              - {label: 简介, name: intro, widget: string}
+              - name: pi
+                label: 导师 (PI)
+                widget: object
+                fields:
+                  - {label: 姓名, name: name, widget: string}
+                  - {label: 职位, name: title, widget: string}
+                  - {label: 照片, name: photo, widget: image, required: false}
+                  - {label: 简短介绍, name: short_bio, widget: text}
+                  - {label: 详细介绍, name: full_bio, widget: text}
+                  - name: education
+                    label: 教育经历
+                    widget: list
+                    field: {label: 条目, name: item, widget: string}
+                  - name: experience
+                    label: 工作经历
+                    widget: list
+                    field: {label: 条目, name: item, widget: string}
+                  - name: honors
+                    label: 荣誉奖项
+                    widget: list
+                    field: {label: 条目, name: item, widget: string}
+                  - {label: 邮箱, name: email, widget: string}
+                  - {label: Google Scholar 链接, name: google_scholar, widget: string}
+                  - {label: ResearchGate 链接, name: researchgate, widget: string}
+                  - {label: LinkedIn 链接, name: linkedin, widget: string}
+              - name: students
+                label: 学生
+                widget: list
+                fields:
+                  - {label: 姓名, name: name, widget: string}
+                  - {label: 照片, name: photo, widget: image, required: false}
+                  - {label: 身份（如 PhD Student）, name: role, widget: string}
+                  - {label: 简短介绍, name: short_bio, widget: text}
+                  - {label: 详细介绍, name: full_bio, widget: text}
+                  - {label: 教育经历, name: education, widget: string}
+                  - {label: 邮箱, name: email, widget: string}
+              - name: alumni
+                label: 校友
+                widget: list
+                fields:
+                  - {label: 姓名, name: name, widget: string}
+                  - {label: 去向, name: role, widget: string}
+                  - {label: 论文题目, name: thesis, widget: string}
+
+          # ---------- 页脚 ----------
+          - name: footer
+            label: 页脚
+            widget: object
+            fields:
+              - {label: 地址, name: address, widget: string}
+              - {label: 联系邮箱, name: email, widget: string}
+              - {label: 版权文字, name: copyright, widget: string}
+              - name: links
+                label: 链接列表
+                widget: list
+                fields:
+                  - {label: 名称, name: name, widget: string}
+                  - {label: 网址, name: url, widget: string}

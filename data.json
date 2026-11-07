@@ -1,0 +1,213 @@
+{
+  "site": {
+    "title": "RAILS Research Group",
+    "subtitle": "Modern Intelligent Engineering for Our World",
+    "university": "Shenzhen University",
+    "department": "Department of Civil an Transportation Engineering",
+    "logo_text": "RAILS Lab",
+    "favicon": "🔬"
+  },
+  "navigation": {
+    "home": "Home",
+    "research": "Research",
+    "people": "People",
+    "recruitment": "Join Us"
+  },
+  "home": {
+    "vision": {
+      "title": "Vision",
+      "content": "Our vision is to advance sustainable and resilient infrastructure through innovative materials and structural engineering. We develop next-generation concrete technologies, intelligent monitoring systems, and life-cycle assessment methods to address the grand challenges of urbanization and climate change.",
+      "keywords": [
+        "Sustainable Infrastructure",
+        "Smart Materials",
+        "Structural Resilience",
+        "AI-Driven Design"
+      ]
+    },
+    "news": {
+      "title": "News",
+      "items": [
+        {
+          "date": "2026-08",
+          "text": "Welcome new members joining the group! Positions filled for Fall 2026."
+        },
+        {
+          "date": "2026-06",
+          "text": "Paper on UHPC strengthening accepted in Engineering Structures."
+        },
+        {
+          "date": "2026-03",
+          "text": "Research grant awarded for AI-based structural health monitoring project."
+        },
+        {
+          "date": "2025-12",
+          "text": "Lab equipment upgrade completed — new MTS testing system installed."
+        }
+      ]
+    },
+    "recruitment": {
+      "title": "Recruitment",
+      "intro": "We are always looking for talented and motivated students to join our team. If you are passionate about concrete materials, structural engineering, or AI applications in civil engineering, please contact us.",
+      "positions": [
+        {
+          "role": "PhD Students",
+          "slots": "2-3 positions/year",
+          "requirements": "Master's degree in Civil Engineering, Materials Science, or related fields. Strong background in experimental mechanics or computational modeling preferred."
+        },
+        {
+          "role": "Master's Students",
+          "slots": "3-5 positions/year",
+          "requirements": "Bachelor's degree in Civil Engineering. Interest in concrete materials, structural testing, or numerical simulation."
+        },
+        {
+          "role": "Undergraduate Researchers",
+          "slots": "Open",
+          "requirements": "Currently enrolled in Civil Engineering program. Part-time research experience in lab testing or data analysis."
+        }
+      ],
+      "contact": "Interested candidates please email your CV, transcripts, and a brief research statement to: professor@university.edu"
+    }
+  },
+  "research": {
+    "title": "Research Directions",
+    "intro": "Our research focuses on four interconnected pillars that span the full lifecycle of concrete infrastructure — from construction and strengthening to intelligent monitoring and long-term durability.",
+    "directions": [
+      {
+        "id": "rehabilitation",
+        "name": "Rehabilitation",
+        "icon": "🔧",
+        "short": "Advanced strengthening and repair of existing concrete structures using UHPC, FRP, and novel cementitious composites.",
+        "detail": "We develop innovative rehabilitation techniques for aging and damaged concrete infrastructure. Our work encompasses ultra-high performance concrete (UHPC) overlays and jackets, fiber-reinforced polymer (FRP) strengthening systems, and novel repair materials with enhanced durability. We combine full-scale experimental testing with computational modeling to establish design guidelines for structural rehabilitation.",
+        "keywords": [
+          "UHPC Strengthening",
+          "FRP Systems",
+          "Repair Materials",
+          "Structural Retrofit",
+          "Interface Bond"
+        ],
+        "image": ""
+      },
+      {
+        "id": "assembly",
+        "name": "Assembly",
+        "icon": "🏗️",
+        "short": "Prefabrication, modular construction, and 3D concrete printing for accelerated and sustainable building processes.",
+        "detail": "Our assembly research explores the frontiers of automated and modular concrete construction. We investigate 3D concrete printing with advanced cementitious materials, prefabricated UHPC components for accelerated bridge construction, and digital fabrication workflows. Our goal is to reduce construction time, material waste, and carbon footprint while improving quality control through industrialization.",
+        "keywords": [
+          "3D Concrete Printing",
+          "Modular Construction",
+          "Prefabrication",
+          "Digital Fabrication",
+          "Underwater Concrete"
+        ],
+        "image": ""
+      },
+      {
+        "id": "intelligence",
+        "name": "Intelligence",
+        "icon": "🤖",
+        "short": "AI-driven structural health monitoring, predictive modeling, and smart decision-support systems for infrastructure management.",
+        "detail": "We harness artificial intelligence and machine learning to create intelligent infrastructure systems. Our projects include computer vision-based crack detection and assessment, deep learning models for concrete mix design optimization, sensor networks for real-time structural health monitoring, and AI-assisted decision frameworks for maintenance prioritization. We bridge the gap between data science and civil engineering practice.",
+        "keywords": [
+          "Machine Learning",
+          "Computer Vision",
+          "SHM",
+          "Digital Twin",
+          "Predictive Modeling"
+        ],
+        "image": ""
+      },
+      {
+        "id": "longevity",
+        "name": "Longevity",
+        "icon": "⏳",
+        "short": "Life-cycle assessment, durability enhancement, and sustainable materials for long-lasting concrete infrastructure.",
+        "detail": "Ensuring the long-term performance of concrete structures in aggressive environments is central to our longevity research. We study degradation mechanisms including corrosion, freeze-thaw, sulfate attack, and alkali-silica reaction. Our work develops service-life prediction models, accelerated testing protocols, and durable material formulations incorporating supplementary cementitious materials, recycled aggregates, and bio-inspired protective systems.",
+        "keywords": [
+          "Durability",
+          "Life-Cycle Assessment",
+          "Corrosion",
+          "Sustainable Materials",
+          "Service-Life Modeling"
+        ],
+        "image": ""
+      }
+    ]
+  },
+  "people": {
+    "title": "People",
+    "intro": "Meet our research team",
+    "pi": {
+      "name": "Prof. Liu, Tongxu",
+      "title": "Principal Investigator",
+      "photo": "photos/Prof.jpg",
+      "short_bio": "Professor of Civil Engineering. PhD from University of Montreal. Research interests include UHPC-enhanced structures, repair and strengthening, and machine leanring applications in civil engineering.",
+      "full_bio": "Dr. Your Name is a Professor in the Department of Civil Engineering at Your University. She/He received her/his PhD from University of X. Her/His research focuses on ultra-high performance concrete, structural rehabilitation, and intelligent infrastructure systems. She/He has published over XX papers in leading journals and serves on several technical committees. She/He is the recipient of the XXX Award and is a licensed Professional Engineer.",
+      "education": [
+        "PhD, University of X",
+        "MS, University of Y",
+        "BS, University of Z"
+      ],
+      "experience": [
+        "Professor, Your University (20XX-present)",
+        "Assistant Professor, Your University (20XX-20XX)",
+        "Postdoc, University of W (20XX-20XX)"
+      ],
+      "honors": [
+        "XXX Award",
+        "YYY Fellowship",
+        "ZZZ Prize"
+      ],
+      "email": "tongxu.liu@szu.edu.cn",
+      "google_scholar": "",
+      "researchgate": "",
+      "linkedin": ""
+    },
+    "students": [
+      {
+        "name": "Student Name 1",
+        "photo": "",
+        "role": "PhD Student (20XX-)",
+        "short_bio": "Research on UHPC strengthening of RC beams. Co-advised with Prof. X.",
+        "full_bio": "Student 1 is a PhD candidate working on experimental and numerical investigation of UHPC-strengthened reinforced concrete beams. Their research involves large-scale beam testing, finite element modeling, and development of design guidelines.",
+        "education": "MS, University of A; BS, University of B",
+        "email": "student1@university.edu"
+      },
+      {
+        "name": "Student Name 2",
+        "photo": "",
+        "role": "Master's Student (20XX-)",
+        "short_bio": "Research on AI-based crack detection using computer vision.",
+        "full_bio": "Student 2 is a Master's student developing deep learning models for automated crack detection and assessment in concrete structures. Their work combines computer vision techniques with structural engineering knowledge to create practical inspection tools.",
+        "education": "BS, University of C",
+        "email": "student2@university.edu"
+      }
+    ],
+    "alumni": [
+      {
+        "name": "Former Student 1",
+        "role": "MS, 20XX → Now: PhD at University of D",
+        "thesis": "Shear behavior of UHPFRC-strengthened beams"
+      }
+    ]
+  },
+  "footer": {
+    "address": "Department of Civil Engineering, Your University",
+    "email": "professor@university.edu",
+    "copyright": "MEOW Research Group. All rights reserved.",
+    "links": [
+      {
+        "name": "Google Scholar",
+        "url": ""
+      },
+      {
+        "name": "ResearchGate",
+        "url": ""
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/MontrealCat"
+      }
+    ]
+  }
+}
