@@ -2,15 +2,12 @@
 #  Decap CMS 编辑器配置
 #  此文件把 website/data.json 的全部字段映射成表单。
 #  注意：所有字段都必须列在这里，漏掉任何字段都会在保存时被删除！
-#  学生登录 https://montrealcat.github.io/admin/ 后即可用表单编辑。
+#  登录方式：Netlify Identity（在 Netlify 控制台开启 Git Gateway 后即可邮箱登录）
 # ============================================================
 
 backend:
-  name: github
-  repo: MontrealCat/montrealcat.github.io        # ← 改成你的「用户名/仓库名」，确认大小写
-  branch: main                                    # ← 改成你仓库的默认分支（main 或 master）
-  base_url: https://YOUR-OAUTH.vercel.app         # ← 改成你部署的 OAuth 服务器地址（结尾不要 /api）
-  site_domain: montrealcat.github.io
+  name: git-gateway
+  branch: main      # ← 如果你的 GitHub 仓库默认分支是 master，把这行改成 master
 
 # 图片上传到仓库根的 photos/ 目录，内容里存 "photos/xxx.jpg"
 media_folder: photos
